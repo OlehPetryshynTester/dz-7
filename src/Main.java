@@ -2,7 +2,10 @@ public class Main {
     public static void main(String[] args) {
         int n = 6;
         for (int i = n; i > 0; i--) {
-            String hashes = "#".repeat(i);
+            String hashes = "";
+            for (int a = 0; a < i; a++) {
+                hashes +=  "#";
+            }
             System.out.println(i + " " + hashes);
         }
 
